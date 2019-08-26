@@ -13,6 +13,9 @@ public class FixPixel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int SetWidth = Screen.width;
+        int SetHeight = Screen.height;
+
+        Screen.SetResolution(SetWidth * (SetWidth / SetHeight), SetHeight * (SetWidth / SetHeight), true);
     }
 }
