@@ -17,7 +17,7 @@ public class ObjectCtrl : MonoBehaviour
     private Vector3 positionOfScreen;
 
     // 타일 색을 바꾸기 위한 변수
-    private int tileColor = 0;
+    public int tileColor = 0;
     // 마우스 클릭시 위치
     private Vector3 originalPos;
     // 오브젝트가 고양이인지 여부
