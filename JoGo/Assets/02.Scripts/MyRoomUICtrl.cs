@@ -150,6 +150,7 @@ public class MyRoomUICtrl : MonoBehaviour
         for (int i = 0; i < objectctrlslength; i++)
         {
             GameObject.Find("MyRoomMgr").GetComponent<MyRoomMgrCtrl>().objectCtrls[i].transform.position = GameObject.Find("MyRoomMgr").GetComponent<MyRoomMgrCtrl>().objectCtrls[i].objectPos;
+            GameObject.Find("MyRoomMgr").GetComponent<MyRoomMgrCtrl>().objectCtrls[i].tileColor = 0;
         }
     }
 

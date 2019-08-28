@@ -1053,6 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -2491,11 +2492,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1566674837}
     m_Modifications:
-    - target: {fileID: 1789350676558411726, guid: 69fbdad72a0f1c1488160b76dc85f28a,
-        type: 3}
-      propertyPath: m_Name
-      value: UIManager
-      objectReference: {fileID: 0}
     - target: {fileID: 8120111552223671009, guid: 69fbdad72a0f1c1488160b76dc85f28a,
         type: 3}
       propertyPath: storeBtn
@@ -2552,6 +2548,11 @@ PrefabInstance:
       propertyPath: missionPopUp
       value: 
       objectReference: {fileID: 890066502}
+    - target: {fileID: 1789350676558411726, guid: 69fbdad72a0f1c1488160b76dc85f28a,
+        type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
     - target: {fileID: 4030980380342470167, guid: 69fbdad72a0f1c1488160b76dc85f28a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2848,6 +2849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -3329,6 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -3698,6 +3701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -3966,6 +3970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -5344,6 +5349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -6727,7 +6733,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2107701811}
-        m_MethodName: CatInfoBackBtn
+        m_MethodName: OnTouchCatInfoBackBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7874,7 +7880,7 @@ RectTransform:
   m_GameObject: {fileID: 907520262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.34701, y: 0.34701, z: 0.34701}
   m_Children:
   - {fileID: 1711526372}
   - {fileID: 1563783708}
@@ -7883,7 +7889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 110}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907520264
@@ -10223,12 +10229,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 5124740142575741006, guid: 74bec3a5b6952284bac13177ba33c56f,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4fe301ac4532f419fb8176295cd53363,
-        type: 3}
     - target: {fileID: 3756551620937757483, guid: 74bec3a5b6952284bac13177ba33c56f,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -10239,6 +10239,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 5124740142575741006, guid: 74bec3a5b6952284bac13177ba33c56f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe301ac4532f419fb8176295cd53363,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74bec3a5b6952284bac13177ba33c56f, type: 3}
 --- !u!1 &1192638715 stripped
@@ -11093,6 +11099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -11913,6 +11920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -15923,7 +15931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 329}
+  m_AnchoredPosition: {x: 0, y: 340}
   m_SizeDelta: {x: 0, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837483539
@@ -17092,6 +17100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b4755e65a42ba438c29f9c2e5d8df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileColor: 0
   objectPos: {x: 0, y: 0, z: 0}
   catIsOn: 0
   CatOnMePos: {x: 0, y: 0, z: 0}
@@ -17875,12 +17884,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6807048953730948459, guid: 2ef2812f0aa839f4bba0261177efedaa,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cb51d1e7bd20e402184fb60e56ad31c6,
-        type: 3}
     - target: {fileID: 2971956215970149496, guid: 2ef2812f0aa839f4bba0261177efedaa,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -17891,6 +17894,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 6807048953730948459, guid: 2ef2812f0aa839f4bba0261177efedaa,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cb51d1e7bd20e402184fb60e56ad31c6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ef2812f0aa839f4bba0261177efedaa, type: 3}
 --- !u!1 &2111589292 stripped
@@ -18005,7 +18014,7 @@ RectTransform:
   m_GameObject: {fileID: 2124271020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.32633054, y: 0.32633054, z: 0.32633054}
   m_Children:
   - {fileID: 367411895}
   - {fileID: 115427966}
@@ -18018,7 +18027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -23, y: 46}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124271022

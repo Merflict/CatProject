@@ -476,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 3984321822765929714, guid: 80b053771be0e2a4881057c297c53b77,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -800
+      value: -285
       objectReference: {fileID: 0}
     - target: {fileID: 3984321822765929714, guid: 80b053771be0e2a4881057c297c53b77,
         type: 3}
@@ -518,6 +518,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3984321822765929714, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39916515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984321822765929714, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39916515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984321822765929714, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.39916515
+      objectReference: {fileID: 0}
     - target: {fileID: 1499551102765958990, guid: 80b053771be0e2a4881057c297c53b77,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -537,6 +552,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActiveFalse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073326045251593464, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.64205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073326045251593464, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.64205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073326045251593464, guid: 80b053771be0e2a4881057c297c53b77,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.31575
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b053771be0e2a4881057c297c53b77, type: 3}
@@ -2564,7 +2594,7 @@ PrefabInstance:
     - target: {fileID: 6616554854226247081, guid: f78dc7ddbfd20a744abf2d5886135528,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -550
+      value: -203
       objectReference: {fileID: 0}
     - target: {fileID: 6616554854226247081, guid: f78dc7ddbfd20a744abf2d5886135528,
         type: 3}
@@ -2605,6 +2635,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616554854226247081, guid: f78dc7ddbfd20a744abf2d5886135528,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40658
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616554854226247081, guid: f78dc7ddbfd20a744abf2d5886135528,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.40658
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616554854226247081, guid: f78dc7ddbfd20a744abf2d5886135528,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40658
       objectReference: {fileID: 0}
     - target: {fileID: 214033947167238108, guid: f78dc7ddbfd20a744abf2d5886135528,
         type: 3}
@@ -2745,11 +2790,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1789350676558411726, guid: 69fbdad72a0f1c1488160b76dc85f28a,
-        type: 3}
-      propertyPath: m_Name
-      value: UIManager
-      objectReference: {fileID: 0}
     - target: {fileID: 8120111552223671009, guid: 69fbdad72a0f1c1488160b76dc85f28a,
         type: 3}
       propertyPath: backBtn
@@ -2767,6 +2807,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7951803525807649817, guid: 74bec3a5b6952284bac13177ba33c56f,
         type: 3}
+    - target: {fileID: 1789350676558411726, guid: 69fbdad72a0f1c1488160b76dc85f28a,
+        type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
     - target: {fileID: 4030980380342470167, guid: 69fbdad72a0f1c1488160b76dc85f28a,
         type: 3}
       propertyPath: m_LocalPosition.x
