@@ -162,9 +162,12 @@ public class MyRoomUICtrl : MonoBehaviour
     // 가구 클릭시 특정 위치에 생성
     public void OnTouchF1()
     {
-        GameObject instance = Instantiate(Sofa2, Sofa2.transform.position, Sofa2.transform.rotation);
-        instance.transform.parent = Models.transform;
-        isInstantiate = true;
+        if (!isInstantiate)
+        {
+            GameObject instance = Instantiate(Sofa2, Sofa2.transform.position, Sofa2.transform.rotation);
+            instance.transform.parent = Models.transform;
+            isInstantiate = true;
+        }
 
         flist.SetActive(false);
     }
