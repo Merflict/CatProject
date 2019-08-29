@@ -14,6 +14,10 @@ public class CatClickCls : MonoBehaviour
 
     public int setcamera = 0;
 
+    private GameObject raycat = null;
+    private GameObject mainuimgr;
+    private GameObject mainbtn;
+
     void CatUIOnOff()
     {
         if (catUICount % 2 == 1)
@@ -46,6 +50,8 @@ public class CatClickCls : MonoBehaviour
                 catIta.transform.position = new Vector3(x, screenPos.y, catIta.transform.position.z);
 
                 catUICount++;
+
+                raycat = hit.collider.gameObject;
             }
         }
     }
@@ -60,7 +66,9 @@ public class CatClickCls : MonoBehaviour
         itemListUI.SetActive(false);
         itemDescUI.SetActive(false);
         catInfoUI.SetActive(false);
-        
+
+        mainuimgr = GameObject.Find("MainUIMgr");
+        mainbtn = GameObject.Find("Main");
     }
 
 
@@ -85,6 +93,19 @@ public class CatClickCls : MonoBehaviour
                 catUICount++;
 
             CatUIOnOff();
+        }
+    }
+
+    public void OnTouchBye()
+    {
+        GameObject.Find("Information").gameObject.SetActive(false);
+
+        if (raycat != null)
+        {
+            GameObject.Find("CatInfoUI").gameObject.SetActive(false);
+            Destroy(raycat);
+            mainuimgr.SetActive(true);
+            mainbtn.SetActive(true);
         }
     }
 }
